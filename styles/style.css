@@ -16,6 +16,11 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  vertical-align: middle;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
 }
 
 h1,
@@ -49,14 +54,12 @@ ol {
 } 
 
 .content {
-  position: relative;
+  
   height: 534px;
   display: grid;
-  grid-template-columns: 1fr 415px;
-  grid-template-areas: 'grid-result grid-content-details';
-  gap: 30px;
-  margin: 133px 30px 133px 30px;
-  padding: 0 0 0px 0;
+  grid-template-columns: 30px 711px 30px 415px 30px;
+  grid-template-areas: '. grid-result . grid-content-details .';
+  justify-content: center;
 }
 
 .result {
@@ -66,6 +69,7 @@ ol {
   gap: 5px;
   grid-area: grid-result;
   justify-content: end;
+  width: 711px;
 }
 
 .result__video-container {
@@ -108,7 +112,7 @@ ol {
   font-family: 'Fira Sans Condensed', sans-serif;
   border-bottom: #fff solid 1px;
   border-top: #fff solid 1px;
-  padding: 3px 0 1px 2px;
+  padding: 3px 0 2px 2px;
   appearance: none;
   color: #fff;
 }
@@ -126,7 +130,7 @@ ol {
 }
 
 .search-form__fieldset:nth-child(2) > div {
-  margin: 0 0 4px 0;
+  margin: 0 0 5px 0;
 }
 
 .search-form__checkbox-list {
@@ -198,8 +202,8 @@ input[type='checkbox']:active + span::before {
   font-size: 75px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 71.5px;
-  margin-bottom: 26px;
+  line-height: 70px;
+  margin-bottom: 24px;
 }
 
 .title::first-line {
@@ -229,7 +233,7 @@ input[type='checkbox']:active + span::before {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-height: 298px;
+  max-height: 300px;
   padding: 0 2px 2px 2px;
   overflow: auto;
 }
