@@ -204,15 +204,12 @@ ol {
 
 .content__video-card-description {
   max-width: 200px;
-  max-height: 65px;
   text-overflow: ellipsis;
   text-wrap: nowrap;
   overflow: hidden;
 }
 
-.content__list-item:focus,
-.content__card-link:focus,
-.content__video-card:focus {
+.content__card-link:focus {
   outline: none;
 }
 
@@ -292,6 +289,10 @@ button:focus {
 }
 
 .button:focus-visible {
-  outline: #fff double 1px;
+  outline: #fff solid 1px;
   outline-offset: 1px;
 }
+
+/*Привет, Ольга, спасибо за ревью, полезные замечания и ссылки на дополнительные материалы.
+Отдельное спасибо за оперативную проверку моих работ - это дало много дополнительного времеми для работы над ошибками (очень ценно).
+*/
